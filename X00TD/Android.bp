@@ -229,4 +229,3 @@ dex_import {
 	owner: "asus",
 	jars: ["proprietary/framework/com.qti.snapdragon.sdk.display.jar"],
 }
-
