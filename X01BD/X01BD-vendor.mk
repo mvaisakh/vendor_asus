@@ -137,6 +137,7 @@ PRODUCT_PACKAGES += \
     libqcomfm_jni \
     libsdm-disp-apis \
     vendor.qti.hardware.fm@1.0 \
+    QtiTelephonyService \
     imssettings \
     dpmserviceapp \
     ims \
