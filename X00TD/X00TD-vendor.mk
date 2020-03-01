@@ -1410,6 +1410,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libantradio \
     libthermalclient \
+    libqcomfm_jni \
     libtime_genoff \
     vendor.qti.hardware.fm@1.0 \
     WfdService \
