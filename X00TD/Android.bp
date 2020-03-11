@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2019-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,43 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqcomfm_jni",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/libqcomfm_jni.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/libqcomfm_jni.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqti-iopd",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqti-iopd.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqti-iopd.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -230,20 +267,3 @@ dex_import {
 	jars: ["proprietary/framework/com.qti.snapdragon.sdk.display.jar"],
 }
 
-cc_prebuilt_library_shared {
-	name: "libqcomfm_jni",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/libqcomfm_jni.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/lib64/libqcomfm_jni.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-}
