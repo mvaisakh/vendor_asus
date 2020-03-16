@@ -38,6 +38,24 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libavenhancements",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/libavenhancements.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/libavenhancements.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libqcomfm_jni",
 	owner: "asus",
 	strip: {
@@ -52,6 +70,21 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqct_resampler",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/libqct_resampler.so"],
+		},
+	},
+	compile_multilib: "32",
 	prefer: true,
 }
 
