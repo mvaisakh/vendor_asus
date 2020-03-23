@@ -27,7 +27,16 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X01BD/proprietary/product/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.0.so \
     vendor/asus/X01BD/proprietary/product/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.1.so \
     vendor/asus/X01BD/proprietary/product/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.2.so \
-    vendor/asus/X01BD/proprietary/product/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.postproc@1.0.so
+    vendor/asus/X01BD/proprietary/product/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.postproc@1.0.so \
+    vendor/asus/X01BD/proprietary/vendor_overlay/lib/hw/audio.primary.sdm660.so:$(TARGET_COPY_OUT_SYSTEM)/vendor_overlay/lib/hw/audio.primary.sdm660.so \
+    vendor/asus/X01BD/proprietary/vendor_overlay/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_SYSTEM)/vendor_overlay/lib/soundfx/libasphere.so \
+    vendor/asus/X01BD/proprietary/vendor_overlay/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_SYSTEM)/vendor_overlay/lib/soundfx/libqcbassboost.so \
+    vendor/asus/X01BD/proprietary/vendor_overlay/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_SYSTEM)/vendor_overlay/lib/soundfx/libqcreverb.so \
+    vendor/asus/X01BD/proprietary/vendor_overlay/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_SYSTEM)/vendor_overlay/lib/soundfx/libqcvirt.so \
+    vendor/asus/X01BD/proprietary/vendor_overlay/lib64/hw/audio.primary.sdm660.so:$(TARGET_COPY_OUT_SYSTEM)/vendor_overlay/lib64/hw/audio.primary.sdm660.so \
+    vendor/asus/X01BD/proprietary/vendor_overlay/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_SYSTEM)/vendor_overlay/lib64/soundfx/libasphere.so \
+    vendor/asus/X01BD/proprietary/vendor_overlay/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_SYSTEM)/vendor_overlay/lib64/soundfx/libqcbassboost.so \
+    vendor/asus/X01BD/proprietary/vendor_overlay/lib64/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_SYSTEM)/vendor_overlay/lib64/soundfx/libqcvirt.so
 
 PRODUCT_PACKAGES += \
     libqcomfm_jni \
