@@ -73,4 +73,3 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	product_specific: true,
 }
-
